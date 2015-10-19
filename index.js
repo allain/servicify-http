@@ -1,15 +1,15 @@
 var objectAssign = require('object-assign');
 
-module.exports = function (servicifyOptions) {
-  servicifyOptions = objectAssign({
+module.exports = function (opts) {
+  opts = objectAssign({
     host: '127.0.0.1',
     port: 2020
-  }, servicifyOptions);
+  }, opts);
 
   return {
-    listen: require('./lib/listen')(servicifyOptions),
-    offer: require('./lib/offer')(servicifyOptions),
-    request: require('./lib/request')(servicifyOptions),
+    listen: require('./lib/listen')(opts),
+    offer: require('./lib/offer')(opts),
+    dispatch: require('./lib/dispatch')(opts),
     name: 'http'
   };
 };

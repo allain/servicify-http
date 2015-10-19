@@ -10,7 +10,7 @@ test('has proper simple api', function(t) {
   t.equal(typeof driver, 'object', 'returned driver instance is an object');;
   t.equal(typeof driver.listen, 'function', 'has listen method');
   t.equal(typeof driver.offer, 'function', 'has offer method');
-  t.equal(typeof driver.request, 'function', 'has request method');
+  t.equal(typeof driver.dispatch, 'function', 'has dispatch method');
 
 
   var offering = driver.offer({name: 'a', version: '1.0.0'}, function invoke() {
