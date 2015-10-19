@@ -27,6 +27,7 @@
     "impatient": "^1.0.1",
     "micro-uid": "^1.0.0",
     "native-promise-only": "0.8.1",
+    "object-assign": "^4.0.1",
     "object-values": "^1.0.0",
     "request": "^2.65.0",
     "restify": "^4.0.3",
