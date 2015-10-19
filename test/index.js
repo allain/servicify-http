@@ -1,6 +1,28 @@
 var test = require('blue-tape');
-
+var isPromise = require('is-promise');
 var Servicify = require('servicify');
+
+test('has proper simple api', function(t) {
+  var servicityHttp = require('..');
+  t.equal(typeof servicityHttp, 'function', 'exports a factory function');
+
+  var driver = servicityHttp({});
+  t.equal(typeof driver, 'object', 'returned driver instance is an object');;
+  t.equal(typeof driver.listen, 'function', 'has listen method');
+  t.equal(typeof driver.offer, 'function', 'has offer method');
+  t.equal(typeof driver.request, 'function', 'has request method');
+
+
+  var offering = driver.offer({name: 'a', version: '1.0.0'}, function invoke() {
+    t.fail('should not be called in this example');
+  }, {host: '127.0.0.1', port: 2020});
+
+  t.ok(isPromise(offering), 'offering should a Promise which resolves into a stopping function');
+  return offering.then(function(stopper) {
+    t.equal(typeof stopper, 'function');
+    return stopper();
+  });
+});
 
 test('supports the full lifecycle', function (t) {
   var servicify = new Servicify({

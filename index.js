@@ -8,8 +8,6 @@ var getJson = require('./utils').getJson;
 var values = require('object-values');
 
 module.exports = function (servicifyOptions) {
-
-
   return {
     listen: require('./lib/listen')(servicifyOptions),
     offer: require('./lib/offer')(servicifyOptions),

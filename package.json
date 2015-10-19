@@ -33,8 +33,9 @@
     "semver": "^5.0.3"
   },
   "devDependencies": {
-    "servicify": "git@github.com:allain/servicify.git#gut",
     "blue-tape": "0.1.10",
-    "promise-identity": "1.1.1"
+    "is-promise": "^2.1.0",
+    "promise-identity": "1.1.1",
+    "servicify": "git@github.com:allain/servicify.git#gut"
   }
 }
