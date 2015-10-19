@@ -1,0 +1,40 @@
+{
+  "name": "servicify-http",
+  "version": "0.1.0",
+  "description": "A naive servicify backend that use plain old HTTP for all its communication.",
+  "main": "index.js",
+  "scripts": {
+    "test": "blue-tape test/*.js",
+    "lint": "eslint --config .eslintrc index.js test/*.js lib/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/allain/servicify-http"
+  },
+  "keywords": [
+    "servicify",
+    "http"
+  ],
+  "author": "Allain Lalonde <allain.lalonde@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allain/servicify-http/issues"
+  },
+  "homepage": "https://github.com/allain/servicify-http#readme",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "dodgy": "^1.1.0",
+    "impatient": "^1.0.1",
+    "micro-uid": "^1.0.0",
+    "native-promise-only": "0.8.1",
+    "object-values": "^1.0.0",
+    "request": "^2.65.0",
+    "restify": "^4.0.3",
+    "semver": "^5.0.3"
+  },
+  "devDependencies": {
+    "servicify": "git@github.com:allain/servicify.git#gut",
+    "blue-tape": "0.1.10",
+    "promise-identity": "1.1.1"
+  }
+}
