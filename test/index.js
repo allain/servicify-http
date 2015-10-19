@@ -2,7 +2,7 @@ var test = require('blue-tape');
 
 var Servicify = require('servicify');
 
-test.only('supports the full lifecycle', function (t) {
+test('supports the full lifecycle', function (t) {
   var servicify = new Servicify({
     driver: require('..')
   });
