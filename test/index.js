@@ -7,7 +7,7 @@ test('has proper simple api', function(t) {
   t.equal(typeof servicityHttp, 'function', 'exports a factory function');
 
   var driver = servicityHttp({});
-  t.equal(typeof driver, 'object', 'returned driver instance is an object');;
+  t.equal(typeof driver, 'object', 'returned driver instance is an object');
   t.equal(typeof driver.listen, 'function', 'has listen method');
   t.equal(typeof driver.offer, 'function', 'has offer method');
   t.equal(typeof driver.call, 'function', 'has call method');

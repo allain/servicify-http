@@ -36,7 +36,7 @@
   "devDependencies": {
     "blue-tape": "0.1.10",
     "is-promise": "^2.1.0",
-    "promise-identity": "1.1.1",
-    "servicify": "~0.x.x"
+    "promise-identity": "^1.1.1",
+    "servicify": "~1.0.0"
   }
 }
