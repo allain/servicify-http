@@ -1,3 +1,5 @@
 # servicify-http
 
-A naive servicify backend that use plain old HTTP with long polling for all of its communication.
+A naive servicify backend that uses plain old HTTP + Long Polling for all of its communication. 
+
+All comm goes through the registry.

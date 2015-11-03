@@ -9,7 +9,7 @@ module.exports = function (opts) {
   return {
     listen: require('./lib/listen')(opts),
     offer: require('./lib/offer')(opts),
-    dispatch: require('./lib/dispatch')(opts),
+    call: require('./lib/call')(opts),
     name: 'http'
   };
 };

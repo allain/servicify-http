@@ -55,7 +55,7 @@ module.exports.getJson = function (url) {
 
     onAbort(function () {
       r.abort();
-    })
+    });
   });
 };
 
@@ -81,7 +81,7 @@ module.exports.putJson = function (url, json) {
 
     onAbort(function () {
       r.abort();
-    })
+    });
   });
 };
 
@@ -107,6 +107,6 @@ module.exports.postJson = function (url, json) {
 
     onAbort(function () {
       r.abort();
-    })
+    });
   });
 };
