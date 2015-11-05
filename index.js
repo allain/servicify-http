@@ -13,3 +13,8 @@ module.exports = function (opts) {
     name: 'http'
   };
 };
+
+module.exports.defaults = {
+  host: '0.0.0.0',
+  port: 2020
+};
