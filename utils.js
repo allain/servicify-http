@@ -46,6 +46,9 @@ module.exports.getJson = function (url) {
       if (err)
         return reject(err);
 
+      if (response.statusCode === 204)
+        return resolve(null);
+
       try {
         resolve(JSON.parse(body));
       } catch (err) {
