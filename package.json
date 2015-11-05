@@ -1,6 +1,6 @@
 {
   "name": "servicify-http",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A naive servicify backend that use plain old HTTP for all its communication.",
   "main": "index.js",
   "scripts": {
